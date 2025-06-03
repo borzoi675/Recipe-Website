@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mami Mama Cooking</title>
+    <title>Mami Mama Cooking - Fixed Images</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -32,19 +32,22 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .nav-left img, .nav-right img {
-            height: 50px;
-            border-radius: 50%;
-            border: 2px solid #fff;
-            transition: transform 0.3s ease;
+        .nav-left {
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color:white;
+            font-weight: bold;
+            margin-left: 3px;
         }
         
-        .nav-left img:hover, .nav-right img:hover {
-            transform: scale(1.1);
-        }
-        
-        .nav-right a {
-            margin-left: 15px;
+        .nav-right a{
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color:white;
+            margin-right: 15px; 
         }
         
         .container {
@@ -349,17 +352,22 @@
             .recipes-container {
                 grid-template-columns: 1fr;
             }
+            
+            .nav-right a {
+                margin-right: 8px;
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <nav class="navigation">
         <div class="nav-left">
-            <img src="logo.jpg" alt="Site Logo" class="picture">
+            <h1>Happy Cooking</h1>
         </div>
         <div class="nav-right">
-            <a href="#about"><img src="home.jpg" alt="Homepage" class="picture"></a>
-            <a href="#services"><img src="about.jpg" alt="About" class="picture"></a>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
         </div>
     </nav>
 
@@ -376,29 +384,29 @@
             <button class="nav-btn filter-btn" data-filter="chicken">🐔 Chicken</button>
             <button class="nav-btn filter-btn" data-filter="pork">🐖 Pork</button>
             <button class="nav-btn filter-btn" data-filter="beef">🐄 Beef</button>
-            <button class="nav-btn filter-btn" data-filter="sweet">🍬 Sweet</button>
+            <button class="nav-btn filter-btn" data-filter="dessert">🍬 Desserts</button>
         </nav>
 
         <div class="recipes-container">
-            <!-- Creamy Garlic Chicken -->
+            <!-- Creamy Garlic Chicken - FIXED IMAGE -->
             <div class="recipe-card" data-id="chicken-garlic" data-category="chicken">
                 <div class="recipe-tag">Chicken Recipe</div>
                 <button class="favorite-btn" aria-label="Add to favorites">♡</button>
-                <img src="creamy.jpg" alt="Creamy Garlic Chicken" class="recipe-image">
+                <img src="https://images.unsplash.com/photo-1604908177453-7462950a6a3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Creamy Garlic Chicken" class="recipe-image">
                 <div class="recipe-content">
                     <h3 class="recipe-title">Creamy Garlic Chicken</h3>
                     <span class="cooking-time">⏲ 40 mins</span>
-                    <h2>Ingredients</h2>
-                    <ul class="ingredients-list">
-                        <li>2 boneless, skinless chicken breasts</li>
-                        <li>1/2 tsp Italian seasoning</li>
-                        <li>1/2 tsp salt</li>
-                        <li>1 tsp Pepper & Garlic powder</li>
-                        <li>3/4 cup heavy cream</li>
-                        <li>1 cup chicken broth</li>
-                    </ul>
-                    <button class="view-recipe-btn">View Full Recipe</button>
+                    <button class="view-recipe-btn">View Recipe</button>
                     <div class="recipe-steps">
+                        <h2>Ingredients</h2>
+                        <ul class="ingredients-list">
+                            <li>2 boneless, skinless chicken breasts</li>
+                            <li>1/2 tsp Italian seasoning</li>
+                            <li>1/2 tsp salt</li>
+                            <li>1 tsp Pepper & Garlic powder</li>
+                            <li>3/4 cup heavy cream</li>
+                            <li>1 cup chicken broth</li>
+                        </ul>
                         <h2>Process</h2>
                         <label class="checkbox-label">
                             <input type="checkbox" onchange="toggleCrossout(this)">
@@ -428,27 +436,27 @@
                 </div>
             </div>
 
-            <!-- Sinigang na Baboy -->
+            <!-- Sinigang na Baboy - FIXED IMAGE -->
             <div class="recipe-card" data-id="baboy-sinigang" data-category="pork">
                 <div class="recipe-tag">Pork Recipe</div>
                 <button class="favorite-btn" aria-label="Add to favorites">♡</button>
-                <img src="sinigang.jpeg" alt="Sinigang na Baboy" class="recipe-image">
+                <img src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2024-09-sinigang%2Fsinigang-362" alt="Sinigang na Baboy" class="recipe-image">
                 <div class="recipe-content">
                     <h3 class="recipe-title">Sinigang na Baboy</h3>
                     <span class="cooking-time">⏲ 1 hour</span>
-                    <h2>Ingredients</h2>
-                    <ul class="ingredients-list">
-                        <li>1 pc red onion</li>
-                        <li>2 pcs tomato, quartered</li>
-                        <li>8 pcs sitaw, sliced</li>
-                        <li>2 cups pork spare rib cut into chunks</li>
-                        <li>1 liter of water</li>
-                        <li>Radish, Kangkong & eggplant</li>
-                        <li>Green chili</li>
-                        <li>1 (20g) pack Knorr Sinigang sa Sampalok Mix Original</li>
-                    </ul>
-                    <button class="view-recipe-btn">View Full Recipe</button>
+                    <button class="view-recipe-btn">View Recipe</button>
                     <div class="recipe-steps">
+                        <h2>Ingredients</h2>
+                        <ul class="ingredients-list">
+                            <li>1 pc red onion</li>
+                            <li>2 pcs tomato, quartered</li>
+                            <li>8 pcs sitaw, sliced</li>
+                            <li>2 cups pork spare rib cut into chunks</li>
+                            <li>1 liter of water</li>
+                            <li>Radish, Kangkong & eggplant</li>
+                            <li>Green chili</li>
+                            <li>1 (20g) pack Knorr Sinigang sa Sampalok Mix Original</li>
+                        </ul>
                         <h2>Process</h2>
                         <label class="checkbox-label">
                             <input type="checkbox" onchange="toggleCrossout(this)">
@@ -474,26 +482,26 @@
                 </div>
             </div>
 
-            <!-- Beef Mechado -->
+            <!-- Beef Mechado - FIXED IMAGE -->
             <div class="recipe-card" data-id="beef-mechado" data-category="beef">
                 <div class="recipe-tag">Beef Recipe</div>
                 <button class="favorite-btn" aria-label="Add to favorites">♡</button>
-                <img src="mechado.jpeg" alt="Beef Mechado" class="recipe-image">
+                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Beef Mechado" class="recipe-image">
                 <div class="recipe-content">
                     <h3 class="recipe-title">Beef Mechado</h3>
                     <span class="cooking-time">⏲ 2 hours</span>
-                    <h2>Ingredients</h2>
-                    <ul class="ingredients-list">
-                        <li>1 1/2 lbs beef for stew, bay leaves</li>
-                        <li>1/2 juice of half a lemon, 3tsp of oil</li>
-                        <li>1/2 tsp fish sauce, pepper</li>
-                        <li>1 cup tomato sauce and water</li>
-                        <li>1 carrots, red bell pepper, potato</li>
-                        <li>1 cup beef broth, dashed of tabasco</li>
-                    </ul>
                     <p class="descript">A traditional Filipino stew made with tender beef chunks simmered in a savory tomato-based sauce, often flavored with soy sauce, calamansi (or lemon), garlic, onions, and bay leaves.</p>
-                    <button class="view-recipe-btn">View Full Recipe</button>
+                    <button class="view-recipe-btn">View Recipe</button>
                     <div class="recipe-steps">
+                        <h2>Ingredients</h2>
+                        <ul class="ingredients-list">
+                            <li>1 1/2 lbs beef for stew, bay leaves</li>
+                            <li>1/2 juice of half a lemon, 3tsp of oil</li>
+                            <li>1/2 tsp fish sauce, pepper</li>
+                            <li>1 cup tomato sauce and water</li>
+                            <li>1 carrots, red bell pepper, potato</li>
+                            <li>1 cup beef broth, dashed of tabasco</li>
+                        </ul>
                         <h2>Process</h2>
                         <label class="checkbox-label">
                             <input type="checkbox" onchange="toggleCrossout(this)">
@@ -526,6 +534,70 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Chocolate Chip Cookies - Already working -->
+            <div class="recipe-card" data-id="chocolate-cookie" data-category="dessert">
+                <div class="recipe-tag">Dessert Recipe</div>
+                <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Chocolate Chip Cookies" class="recipe-image">
+                <div class="recipe-content">
+                    <h3 class="recipe-title">Chocolate Chip Cookies</h3>
+                    <span class="cooking-time">⏲ 30 mins</span>
+                    <p class="descript">Classic homemade chocolate chip cookies with crispy edges and chewy centers.</p>
+                    <button class="view-recipe-btn">View Recipe</button>
+                    <div class="recipe-steps">
+                        <h2>Ingredients</h2>
+                        <ul class="ingredients-list">
+                            <li>2 1/4 cups all-purpose flour</li>
+                            <li>1 tsp baking soda</li>
+                            <li>1 tsp salt</li>
+                            <li>1 cup (2 sticks) butter, softened</li>
+                            <li>3/4 cup granulated sugar</li>
+                            <li>3/4 cup packed brown sugar</li>
+                            <li>1 tsp vanilla extract</li>
+                            <li>2 large eggs</li>
+                            <li>2 cups chocolate chips</li>
+                        </ul>
+                        <h2>Process</h2>
+                        <label class="checkbox-label">
+                            <input type="checkbox" onchange="toggleCrossout(this)">
+                            Preheat oven to 375°F (190°C). Line baking sheets with parchment paper.
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" onchange="toggleCrossout(this)">
+                            Combine flour, baking soda, and salt in a small bowl.
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" onchange="toggleCrossout(this)">
+                            Beat butter, granulated sugar, brown sugar, and vanilla in a large mixer bowl until creamy.
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" onchange="toggleCrossout(this)">
+                            Add eggs one at a time, beating well after each addition.
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" onchange="toggleCrossout(this)">
+                            Gradually beat in flour mixture.
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" onchange="toggleCrossout(this)">
+                            Stir in chocolate chips.
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" onchange="toggleCrossout(this)">
+                            Drop by rounded tablespoon onto ungreased baking sheets.
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" onchange="toggleCrossout(this)">
+                            Bake for 9 to 11 minutes or until golden brown.
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" onchange="toggleCrossout(this)">
+                            Cool on baking sheets for 2 minutes; remove to wire racks to cool completely.
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer>
@@ -540,7 +612,7 @@
             button.addEventListener('click', function() {
                 const steps = this.nextElementSibling;
                 steps.style.display = steps.style.display === 'block' ? 'none' : 'block';
-                this.textContent = steps.style.display === 'block' ? 'Hide Recipe' : 'View Full Recipe';
+                this.textContent = steps.style.display === 'block' ? 'Hide Recipe' : 'View Recipe';
             });
         });
 
